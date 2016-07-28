@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="devMode" value="true"></constant>
+	<package name="struts 2 login" extends="struts-default">
+		
+		<action name="login" class="controller.Login">
+			<result name="toSuccessJSP">/jsp/success.jsp</result>
+			<result name="toErrorJSP">/jsp/error.jsp</result>
+		</action>
+		
+	</package>
+</struts>   
